@@ -1,0 +1,4 @@
+*.DS*
+*node_*
+package-lock.json
+.idea
