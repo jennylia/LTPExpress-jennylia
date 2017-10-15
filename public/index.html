@@ -1,18 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Sample Site</title>
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <style>
-        body {
-            padding-top: 50px;
-        }
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <!--Simple AJAX with JQuery-->
+    <title>Grayscale - Start Bootstrap Theme</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+          type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+    <!-- Script -->
     <script>
         $(document).ready(function () {
 
@@ -38,23 +52,54 @@
         });
     </script>
 </head>
-<body>
 
-<div class="container">
-    <div class="jumbotron">
-        <h1>Today's Life Tip From Reddit!</h1>
-    </div>
+<body id="page-top">
 
-    <div class="container">
-        <div id="div1">Click on the button to get some text
+
+<!-- Intro Header -->
+<header class="masthead">
+    <div class="intro-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h1 class="brand-heading">Life Tips</h1>
+                    <p class="intro-text">Today's Life Tip From Reddit!
+                        <br><div id="div1">Click on the button to get some text...</div></p>
+                    <div class="container">
+                        <a id="linkText"><h2></h2></a>
+                    </div>
+
+                    <button class="btn btn-primary" id="button">Get Life Pro Tip
+                    </button>
+
+                </div>
+            </div>
         </div>
-        <a id="linkText"><h2></h2></a>
     </div>
+</header>
 
-    <button class="btn btn-primary" id="button">Get Life Pro Tip</button class="btn btn-primary">
 
-</div>
+<!-- Map Section -->
+<div id="map"></div>
 
+<!-- Footer -->
+<footer>
+    <div class="container text-center">
+        <p>Copyright &copy; Jennylia 2017</p>
+    </div>
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/popper/popper.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+<!-- Plugin JavaScript -->
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+<!-- Custom scripts for this template -->
+<script src="js/grayscale.min.js"></script>
 
 </body>
+
 </html>
