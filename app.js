@@ -1,16 +1,19 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 
-app.get('/', function(req, res) {
-  res.send({
-    "Output": "Hello World!"
-  });
+app.get('/', function (req, res) {
+    // res.send({
+    //   "Output": "Hello World!"
+    // });
+    res.sendFile(path.join(__dirname + '/public/index.html'));
+
 });
 
-app.post('/', function(req, res) {
-  res.send({
-    "Output": "Hello World!"
-  });
+app.post('/', function (req, res) {
+    res.send({
+        "Output": "Hello World!"
+    });
 });
 
 
