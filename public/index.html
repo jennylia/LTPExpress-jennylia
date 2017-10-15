@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sample Site</title>
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+        }
+    </style>
+
+    <!--Simple AJAX with JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#button").click(function () {
+                $.ajax({
+                    url: "https://www.reddit.com/r/LifeProTips/top.json?limit=1", success: function (result, status) {
+                        if (status) {
+                            console.log("some error?", status);
+                        }
+                        var text = result.data.children[0].data.selftext;
+                        var link = result.data.children[0].data.url;
+
+
+                        $("#div1").html(text);
+                        $("#button").html("Tip Retrieved");
+                        $("#linkText").attr("href", link);
+
+                        $("#linkText").html("Read More...", link);
+
+                    }
+                });
+            });
+        });
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>Today's Life Tip From Reddit!</h1>
+    </div>
+
+    <div class="container">
+        <div id="div1">Click on the button to get some text
+        </div>
+        <a id="linkText"><h2></h2></a>
+    </div>
+
+    <button id="button">Get Life Pro Tip</button>
+
+
+</div>
+
+
+</body>
+</html>
