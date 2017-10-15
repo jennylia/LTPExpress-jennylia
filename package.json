@@ -4,7 +4,8 @@
     "version": "0.0.1",
     "private": true,
     "dependencies": {
+        "aws-serverless-express": "latest",
         "express": "latest",
-        "aws-serverless-express": "latest"
+        "path": "^0.12.7"
     }
 }
